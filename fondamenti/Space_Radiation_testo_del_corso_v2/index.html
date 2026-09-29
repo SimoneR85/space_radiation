@@ -1,0 +1,1857 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Studio ed effetti delle radiazioni spaziali su materiali elettrici e materia biologica.">
+      
+      
+        <meta name="author" content="SimoneR85">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Space Radiation - Space Radiation & Materials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#space-radiation" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Space Radiation &amp; Materials" class="md-header__button md-logo" aria-label="Space Radiation & Materials" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Space Radiation & Materials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Space Radiation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modalita chiara"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modalita chiara" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modalita scura"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modalita scura" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Space Radiation &amp; Materials" class="md-nav__button md-logo" aria-label="Space Radiation & Materials" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Space Radiation & Materials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fondamenti
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fondamenti
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ambiente-spaziale.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ambiente Spaziale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tipi-radiazioni.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tipi di Radiazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Materiali Elettrici
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Materiali Elettrici
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../materiali/tid.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dose Totale (TID)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../materiali/see.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Single Event Effects (SEE)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../materiali/displacement-damage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Danni da Spostamento (DD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Materia Biologica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Materia Biologica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biologica/danni-dna.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Danni Cellulari e DNA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biologica/dosimetria.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dosimetria e Protezione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduzione-perche-la-space-radiation-ci-riguarda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduzione: perché la space radiation ci riguarda
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduzione: perché la space radiation ci riguarda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#un-ambiente-ostile-due-bersagli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Un ambiente ostile, due bersagli
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-origine-della-radiazione-spaziale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Origine della radiazione spaziale
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Origine della radiazione spaziale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-raggi-cosmici-galattici-gcr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Raggi cosmici galattici (GCR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-eventi-di-particelle-solari-spe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Eventi di particelle solari (SPE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-radiazione-intrappolata-fasce-di-van-allen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Radiazione intrappolata: fasce di Van Allen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lorbita-determina-lesposizione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 L'orbita determina l'esposizione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-classificazione-delle-radiazioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Classificazione delle radiazioni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Classificazione delle radiazioni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cose-la-radiazione-in-termini-energetici" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Cos'è la radiazione, in termini energetici
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-due-famiglie-corpuscolare-ed-elettromagnetica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Due famiglie: corpuscolare ed elettromagnetica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-il-discrimine-reale-ionizzante-o-non-ionizzante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Il discrimine reale: ionizzante o non ionizzante
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-le-particelle-ionizzanti-una-per-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Le particelle ionizzanti, una per una
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-raggi-x-e-gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Raggi X e gamma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-e-il-riscaldamento-la-componente-non-ionizzante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 E il riscaldamento? La componente non ionizzante
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-schema-riepilogativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Schema riepilogativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-perche-questa-classificazione-conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Perché questa classificazione conta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-linterazione-con-la-materia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. L'interazione con la materia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-la-missione-e-lanalisi-radiativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. La missione e l'analisi radiativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. La missione e l&#39;analisi radiativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-unanalisi-da-fare-fin-dallinizio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Un'analisi da fare fin dall'inizio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-gli-standard-di-riferimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Gli standard di riferimento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-spenvis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 SPENVIS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-materia-inorganica-effetti-sullelettronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Materia inorganica: effetti sull'elettronica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Materia inorganica: effetti sull&#39;elettronica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-componenti-rad-hard-e-cots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Componenti rad-hard e COTS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-i-tre-meccanismi-di-danno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 I tre meccanismi di danno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-tecnologia-cmos-n-mos-e-p-mos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Tecnologia CMOS: n-MOS e p-MOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-condizioni-di-test-worst-case-bias-statico-e-dinamico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Condizioni di test: worst case, bias statico e dinamico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-tecnologia-bipolare-bjt-e-sige-hbt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Tecnologia bipolare: BJT e SiGe HBT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-case-study-1-adar1000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Case study 1: ADAR1000
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-case-study-2-schermatura-con-bn-bnnt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 Case study 2: schermatura con BN (BNNT)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-i-test-in-laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. I test in laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-materia-organica-effetti-biologici" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Materia organica: effetti biologici
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Materia organica: effetti biologici">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-danno-diretto-e-indiretto-al-dna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Danno diretto e indiretto al DNA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-let-ed-efficacia-biologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 LET ed efficacia biologica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-effetti-acuti-e-cronici" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Effetti acuti e cronici
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-protezione-e-monitoraggio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Protezione e monitoraggio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sintesi-e-confronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Sintesi e confronto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Sintesi e confronto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-materia-inorganica-e-organica-a-confronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Materia inorganica e organica a confronto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-strategie-di-mitigazione-trasversali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Strategie di mitigazione trasversali
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendice-elenco-delle-modifiche-rispetto-alla-bozza-originale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appendice: elenco delle modifiche rispetto alla bozza originale
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="space-radiation">Space Radiation</h1>
+<p><strong>Origine, classificazione ed effetti della radiazione spaziale: dall'ambiente radiativo all'elettronica e alla biologia</strong></p>
+<blockquote>
+<p>**Legenda per la revisione**
+- <code>\[FIGURA: ...]</code> = segnaposto per una figura da inserire
+- <code>\[VERIFICARE: ...]</code> = dato o affermazione da controllare su fonte primaria
+- <code>\[DA ESPANDERE: ...]</code> = punto dove servono dati quantitativi o esempi
+- Le note in blockquote come questa sono commenti di lavoro e vanno tolte dalla versione finale.
+- Le sezioni allineate al deck (37 slide) riportano tra parentesi il riferimento alle slide.</p>
+</blockquote>
+<p>---</p>
+<h2 id="1-introduzione-perche-la-space-radiation-ci-riguarda">1. Introduzione: perché la space radiation ci riguarda</h2>
+<p>Il settore spaziale sta vivendo una nuova era di espansione. La naturale propensione all'esplorazione è oggi viva ed è accompagnata da un crescente interesse commerciale.</p>
+<p>Le telecomunicazioni restano probabilmente il segmento principale, considerando il numero di oggetti dedicati (ad esempio Starlink, i cui satelliti costituiscono una quota molto rilevante degli oggetti in bassa orbita - si pensi che a settembre 2026 sono stati registrati in totale circa 18.000 satelliti attivi di cui 9.800 sono satelliti Starlink).</p>
+<p>Accanto alle telecomunicazioni troviamo:</p>
+<ul>
+<li>
+<p>satelliti per l'osservazione della Terra, con scopi diversi:</p>
+</li>
+<li>
+<p>meteorologia</p>
+</li>
+<li>terremoti e idrogeologia</li>
+<li>oceanografia</li>
+<li>monitoraggio di incendi e altri fenomeni a impatto negativo</li>
+<li>navigazione (GPS e altri sistemi GNSS)</li>
+<li>satelliti per l'osservazione dello spazio profondo (ad esempio i telescopi spaziali)</li>
+<li>sonde interplanetarie</li>
+<li>"fabbriche" orbitanti (ad esempio Varda Space)</li>
+<li>nuove stazioni spaziali, pubbliche e private, destinate a sostituire l'ISS che secondo gli attuali piani dovrebbe iniziare la dismissione tra il 2030 e il 2031.</li>
+</ul>
+<p>NASA, SpacePolicyOnline, Aerospace America: il piano ufficiale prevede operazioni fino al 2030 e rientro controllato all'inizio del 2031, con un veicolo di deorbit (US Deorbit Vehicle) affidato a SpaceX. </p>
+<p>L'economia spaziale non ha ancora una forma definita, ma è opinione comune che possa diventare una nuova frontiera, con una domanda crescente e un interesse globale. Si passa dall'asse USA-Russia del secolo scorso a un interesse diffuso a livello di nazioni. Le grandi agenzie e i grandi operatori oggi attivi coprono almeno tre dei cinque continenti (Antartide esclusa):</p>
+<ul>
+<li><strong>Europa</strong>: ESA</li>
+<li><strong>America</strong>: NASA, SpaceX, Blue Origin</li>
+<li><strong>Asia</strong>: JAXA, agenzia spaziale indiana (ISRO), agenzia spaziale cinese (CNSA)</li>
+<li></li>
+</ul>
+<p>Al momento Africa e Oceania non compaiono in questo elenco, anche se probabilmente è solo questione di tempo.</p>
+<h3 id="un-ambiente-ostile-due-bersagli">Un ambiente ostile, due bersagli</h3>
+<p>Fuori dall'atmosfera e, in gran parte, dalla magnetosfera terrestre, lo spazio è attraversato in modo continuo da particelle e fotoni ad alta energia. Ogni tecnologia che opera in orbita deve convivere con questo ambiente.</p>
+<p>Questo corso introduttivo tenta di fornire alcuni strumenti ed elementi per capirne l'origine, classificarla correttamente e valutarne gli effetti su due tipi di "bersaglio" molto diversi:</p>
+<table>
+<thead>
+<tr>
+<th>Bersaglio</th>
+<th>Esempi</th>
+<th>Tipo di effetto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Materia inorganica</strong></td>
+<td>Componenti elettronici, semiconduttori, RADAR, DPU, sensori</td>
+<td>Degrado graduale o guasto improvviso</td>
+</tr>
+<tr>
+<td><strong>Materia organica</strong></td>
+<td>Tessuti biologici e DNA degli astronauti</td>
+<td>Dal danno acuto al rischio oncologico cronico</td>
+</tr>
+</tbody>
+</table>
+<p><em>(slide 4)</em></p>
+<p>---</p>
+<h2 id="2-origine-della-radiazione-spaziale">2. Origine della radiazione spaziale</h2>
+<p><em>(slide 5-7)</em></p>
+<p>La radiazione nello spazio ha tre sorgenti principali.</p>
+<h3 id="21-raggi-cosmici-galattici-gcr">2.1 Raggi cosmici galattici (GCR)</h3>
+<p>Sono un flusso costante di protoni e ioni pesanti di origine extra-solare, associati a esplosioni di supernova e altri fenomeni astrofisici. Hanno un flusso basso ma energie estreme, e sono la principale fonte di <strong>ioni pesanti (HZE)</strong>.</p>
+<h3 id="22-eventi-di-particelle-solari-spe">2.2 Eventi di particelle solari (SPE)</h3>
+<p>Sono emissioni sporadiche e intense di <strong>protoni</strong> ed elettroni, legate a brillamenti solari (<em>flare</em>) ed espulsioni di massa coronale (CME). Sono imprevedibili e di breve durata, ma con flusso molto elevato.</p>
+<p>Il Sole è la fonte principale di protoni ed elettroni energetici (SPE), mentre gli ioni pesanti ad alta energia provengono soprattutto dai GCR. Il Sole contribuisce comunque con una piccola frazione di ioni più pesanti durante i grandi eventi.</p>
+<h3 id="23-radiazione-intrappolata-fasce-di-van-allen">2.3 Radiazione intrappolata: fasce di Van Allen</h3>
+<p>Elettroni e protoni catturati dal campo magnetico terrestre si accumulano in zone concentriche, le fasce di Van Allen (di recente se ne è scoperta una terza intermedia in particolari condizioni di attività solare). L'esposizione dipende fortemente dall'orbita e dall'inclinazione. Un caso particolare è la <strong>South Atlantic Anomaly (SAA)</strong>, dove la fascia interna scende a quote basse e aumenta il flusso di protoni per i satelliti in LEO. </p>
+<p><code>\[DA ESPANDERE: quote tipiche delle fasce, energie]</code></p>
+<p><code>\[DA INSERIRE: un'immagine sulla Fasce di Van Allen e un'immagine dell'anomalia Sud Atlantica (SAA)]</code></p>
+<h3 id="24-lorbita-determina-lesposizione">2.4 L'orbita determina l'esposizione</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Orbita</strong></th>
+<th><strong>Quota tipica</strong></th>
+<th><strong>Sorgente dominante</strong></th>
+<th><strong>Nota</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LEO</strong></td>
+<td>300 - 2.000 km</td>
+<td>Bordo delle fasce di Van Allen (SAA) + SPE occasionali</td>
+<td>Parzialmente protetta dal campo magnetico terrestre</td>
+</tr>
+<tr>
+<td><strong>GEO</strong></td>
+<td>\~35.800 km</td>
+<td>Elettroni delle fasce esterne + GCR</td>
+<td>Esposizione elettronica cronica più elevata</td>
+</tr>
+<tr>
+<td><strong>Interplanetario</strong></td>
+<td>Oltre la magnetosfera</td>
+<td>GCR + SPE senza schermo magnetico</td>
+<td>Nessuna protezione dal campo terrestre</td>
+</tr>
+</tbody>
+</table>
+<p>Per questo ogni analisi, ad esempio i dati di fluenza protonica usati nel case study BNNT (sezione 6), è sempre riferita a un'orbita specifica.</p>
+<p>---</p>
+<h2 id="3-classificazione-delle-radiazioni">3. Classificazione delle radiazioni</h2>
+<p><em>(slide 8-20)</em></p>
+<h3 id="31-cose-la-radiazione-in-termini-energetici">3.1 Cos'è la radiazione, in termini energetici</h3>
+<p>La radiazione è energia che si propaga nello spazio, trasportata da particelle dotate di massa o da onde/fotoni elettromagnetici. Il parametro chiave non è "che cos'è", ma <strong>quanta energia trasporta per singolo quanto o particella</strong>. Questa energia determina se, interagendo con la materia, la radiazione è in grado di strappare elettroni (ionizzazione) oppure solo di eccitarli e scaldarli.</p>
+<p>Da qui nascono le due distinzioni usate in tutto il corso:</p>
+<ol>
+<li><strong>natura fisica</strong>: particellare oppure elettromagnetica;</li>
+<li><strong>effetto</strong>: ionizzante oppure non ionizzante.</li>
+</ol>
+<p><code>\[FIGURA: scala di energia, da RF/microonde/IR (eccitazione, calore) a visibile/UV (soglia di ionizzazione) a raggi X/gamma (fotoni ionizzanti) e particelle veloci (ionizzazione diretta)]</code></p>
+<h3 id="32-due-famiglie-corpuscolare-ed-elettromagnetica">3.2 Due famiglie: corpuscolare ed elettromagnetica</h3>
+<p><strong>Radiazione corpuscolare (particellare)</strong></p>
+<ul>
+<li>Particelle dotate di massa a riposo.</li>
+<li>Portano carica elettrica, tranne i neutroni.</li>
+<li>Esempi: protoni, elettroni, neutroni, ioni pesanti (HZE), particelle alfa e beta.</li>
+<li>Interagiscono principalmente per urto e tramite il campo coulombiano.</li>
+</ul>
+<p><strong>Radiazione elettromagnetica (ondulatoria)</strong></p>
+<ul>
+<li>Fotoni, privi di massa a riposo; dualismo onda-particella.</li>
+<li>Esempi: onde radio, microonde, IR, visibile, UV, raggi X, raggi gamma.</li>
+<li>Interagiscono per effetto fotoelettrico, effetto Compton e produzione di coppie.</li>
+</ul>
+<h3 id="33-il-discrimine-reale-ionizzante-o-non-ionizzante">3.3 Il discrimine reale: ionizzante o non ionizzante</h3>
+<p>Ciò che conta per i danni è se il singolo quanto o particella trasporta energia sufficiente a strappare un elettrone da un atomo (dell'ordine di 10-33 eV, a seconda del materiale). <code>\[VERIFICARE: l'intervallo 10-33 eV è quello riportato nel deck; controllare la fonte]</code></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Ionizzante</strong></th>
+<th><strong>Non ionizzante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energia</td>
+<td>Sufficiente a rompere legami e strappare elettroni</td>
+<td>Insufficiente a ionizzare: eccita, fa vibrare, scalda</td>
+</tr>
+<tr>
+<td>Esempi</td>
+<td>Raggi X e gamma; alfa, beta; protoni e ioni pesanti; neutroni (ionizzazione indiretta)</td>
+<td>Onde radio, microonde, infrarosso, visibile, UV vicino</td>
+</tr>
+<tr>
+<td>Effetto</td>
+<td>Danno diretto a DNA e semiconduttori</td>
+<td>Prevalentemente termico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-le-particelle-ionizzanti-una-per-una">3.4 Le particelle ionizzanti, una per una</h3>
+<p>Un concetto ricorre per tutte: il <strong>LET (Linear Energy Transfer)</strong>, cioè l'energia rilasciata per unità di percorso. Alto LET significa danno molto concentrato lungo la traccia; basso LET significa danno più diffuso.</p>
+<p><strong>Particelle alfa (α)</strong>
+Nucleo di elio (2 protoni + 2 neutroni, carica +2). LET molto alto, potere penetrante bassissimo: le ferma un foglio di carta o lo strato morto della pelle. Sono pericolose soprattutto come sorgente interna (inalazione o ingestione). Nel contesto spaziale sono una componente minore del flusso primario, ma possono essere rilevanti come prodotti di decadimento nei materiali.</p>
+<p><strong>Particelle beta (β)</strong>
+Elettroni (β⁻) o positroni (β⁺) ad alta velocità. Massa molto minore dell'alfa, quindi LET più basso e percorso più lungo. Le fermano pochi millimetri di alluminio. Nello spazio sono gli elettroni intrappolati nelle fasce di Van Allen e gli elettroni secondari.</p>
+<p><strong>Protoni e ioni pesanti (HZE)</strong>
+Sono la componente dominante di GCR e SPE. Il LET varia con l'energia e per gli ioni pesanti raggiunge valori altissimi, con tracce di ionizzazione molto dense. Sono responsabili dei <strong>Single Event Effects (SEE)</strong> nei componenti elettronici (caso ADAR1000). Caratteristica importante è il <strong>picco di Bragg</strong>: il massimo rilascio di energia avviene a fine percorso, non all'ingresso. Sono determinanti per il dimensionamento della schermatura e per il danno biologico in profondità.</p>
+<p><strong>Neutroni</strong>
+Non hanno carica, quindi non interagiscono per via coulombiana. Ionizzano in modo indiretto, tramite urti nucleari e particelle secondarie.</p>
+<h3 id="35-raggi-x-e-gamma">3.5 Raggi X e gamma</h3>
+<p>Fotoni ad alta energia che differiscono per origine (atomica/elettronica i primi, nucleare i secondi), non per natura fisica. Senza massa né carica, hanno alto potere penetrante e richiedono spessori elevati di materiali densi (Pb, W) per essere attenuati. Il danno è distribuito nel volume attraversato, non concentrato lungo una traccia.</p>
+<h3 id="36-e-il-riscaldamento-la-componente-non-ionizzante">3.6 E il riscaldamento? La componente non ionizzante</h3>
+<p>UV vicino, visibile, infrarosso, microonde e radiofrequenze non hanno energia per fotone sufficiente a ionizzare, ma possono eccitare rotazioni e vibrazioni molecolari: l'effetto netto è un aumento di temperatura. Nello spazio il contributo è secondario (ad esempio il carico termico solare sui satelliti) e va tenuto concettualmente separato dai danni "veri" da radiazione ionizzante trattati nel resto del corso.</p>
+<h3 id="37-schema-riepilogativo">3.7 Schema riepilogativo</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Natura</th>
+<th>Carica</th>
+<th>LET</th>
+<th>Potere penetrante</th>
+<th>Meccanismo dominante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alfa (α)</td>
+<td>Corpuscolare</td>
+<td>+2</td>
+<td>Molto alto</td>
+<td>Molto basso</td>
+<td>Ionizzazione diretta, danno concentrato</td>
+</tr>
+<tr>
+<td>Beta (β)</td>
+<td>Corpuscolare</td>
+<td>±1</td>
+<td>Basso-medio</td>
+<td>Medio</td>
+<td>Ionizzazione diretta, danno diffuso</td>
+</tr>
+<tr>
+<td>Protoni / ioni pesanti</td>
+<td>Corpuscolare</td>
+<td>+1 / +Z</td>
+<td>Medio → molto alto</td>
+<td>Alto</td>
+<td>Ionizzazione + displacement damage, SEE</td>
+</tr>
+<tr>
+<td>Neutroni</td>
+<td>Corpuscolare (neutra)</td>
+<td>0</td>
+<td>Indiretto</td>
+<td>Alto</td>
+<td>Ionizzazione indiretta via secondari</td>
+</tr>
+<tr>
+<td>Raggi X / gamma</td>
+<td>Elettromagnetica</td>
+<td>Nessuna</td>
+<td>Basso (per fotone)</td>
+<td>Molto alto</td>
+<td>Fotoelettrico, Compton, coppie</td>
+</tr>
+<tr>
+<td>UV-visibile-IR-RF</td>
+<td>Elettromagnetica</td>
+<td>Nessuna</td>
+<td>N/A</td>
+<td>Variabile</td>
+<td>Eccitazione molecolare → calore</td>
+</tr>
+</tbody>
+</table>
+<h3 id="38-perche-questa-classificazione-conta">3.8 Perché questa classificazione conta</h3>
+<ol>
+<li><strong>Schermatura</strong>: le particelle cariche pesanti richiedono strategie diverse dai fotoni penetranti (case study BNNT).</li>
+<li><strong>Test sull'elettronica</strong>: TID e displacement damage da particelle sono cosa diversa dai SEE da ioni pesanti (case study ADAR1000).</li>
+<li><strong>Effetti biologici</strong>: il danno al DNA dipende fortemente dal LET.</li>
+</ol>
+<p><code>\[DA ESPANDERE: energie tipiche in MeV, range in mm/cm per materiale, valori di LET]</code></p>
+<p>---</p>
+<h2 id="4-linterazione-con-la-materia">4. L'interazione con la materia</h2>
+<p>Un aspetto importante è il tipo di effetto che la radiazione può avere sulla materia.</p>
+<p><code>\[FIGURA: curva degli effetti in funzione dell'energia del fotone e del numero atomico del materiale: effetto fotoelettrico / Compton / produzione di coppie]</code></p>
+<p><code>\[FIGURA: bremsstrahlung e generazione di radiazione secondaria]</code></p>
+<p>L'interazione può avvenire a livello <strong>molecolare</strong> oppure <strong>subatomico</strong> (interazione con gli elettroni o con le particelle del nucleo).</p>
+<p>In questo contesto la materia organica è generalmente più sensibile di quella inorganica. La ragione sta nella natura dei legami chimici che portano alla formazione di molecole complesse come il DNA: la rottura di pochi legami in una molecola con funzione biologica critica può avere conseguenze funzionali, mentre un reticolo cristallino tollera un certo numero di difetti. Va però precisato che "più sensibile" non significa "più danneggiabile a parità di dose" in senso assoluto: le cellule dispongono di meccanismi di riparazione che l'elettronica non ha, mentre l'elettronica può guastarsi in modo istantaneo per un singolo evento. Le due sensibilità hanno quindi natura diversa (vedi sezione 8). <code>\[VERIFICARE / RIVEDERE: allineare questa argomentazione al confronto finale di slide 35]</code></p>
+<p>Nel settore spaziale la radiazione è una costante da considerare sia per missioni con astronauti sia per missioni senza. Le seconde sono numericamente molto più numerose, pur ricordando che l'ISS è occupata in modo continuativo tutto l'anno.</p>
+<p>---</p>
+<h2 id="5-la-missione-e-lanalisi-radiativa">5. La missione e l'analisi radiativa</h2>
+<h3 id="51-unanalisi-da-fare-fin-dallinizio">5.1 Un'analisi da fare fin dall'inizio</h3>
+<p>Se da un lato la radiazione è onnipresente, dall'altro la gravosità, gli effetti e le precauzioni variano in funzione del tipo di missione. Dal punto di vista tecnico pesano soprattutto:</p>
+<ol>
+<li>il <strong>tipo di orbita</strong>;</li>
+<li>la <strong>durata della missione</strong>;</li>
+<li>la <strong>natura dell'oggetto esposto</strong> e il livello di rischio, seguendo la filosofia P×D <code>\[VERIFICARE: specificare la definizione usata, ad esempio probabilità × danno/severità]</code>.</li>
+</ol>
+<p>L'analisi degli effetti radiativi è presente fin dalle prime fasi di pianificazione: permette di capire quali saranno le criticità principali per la corretta progettazione della missione.</p>
+<p>Secondo gli standard ECSS la preparazione di una missione è divisa in fasi, dalla Fase 0 alla Fase F, attraverso le quali il progetto raggiunge progressivamente maggiore complessità e rigore di dettaglio. Già nelle fasi iniziali è importante un'indagine qualitativa e quantitativa dell'esposizione.</p>
+<h3 id="52-gli-standard-di-riferimento">5.2 Gli standard di riferimento</h3>
+<p>Gli standard ECSS più rilevanti per questo tema sono:</p>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>Ambito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ECSS-E-ST-10-12C</strong></td>
+<td>Ingegneria: metodi per il calcolo della radiazione ricevuta, dei suoi effetti e margini di progetto</td>
+</tr>
+<tr>
+<td><strong>ECSS-Q-ST-60-15C</strong></td>
+<td>Qualità: radiation hardness assurance per i componenti EEE</td>
+</tr>
+<tr>
+<td><strong>ECSS-Q-ST-70-06C</strong></td>
+<td>Qualità: test di radiazione particellare e UV sui <strong>materiali</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>**Correzione rispetto alla bozza.** Il terzo standard riguarda i materiali, non l'elettronica, quindi va presentato di conseguenza (è quello rilevante, ad esempio, per il layer BN del case study). <code>\[VERIFICARE: titoli esatti sul sito ECSS]</code></p>
+</blockquote>
+<p>Questi documenti sono i capisaldi utilizzati dall'ESA e devono essere applicati alle missioni svolte con le agenzie europee (ASI, DLR, ecc.). Su questo tema c'è in genere un'ottima sinergia con le normative NASA.</p>
+<h3 id="53-spenvis">5.3 SPENVIS</h3>
+<p>L'ESA mette a disposizione sul proprio portale il tool <strong>SPENVIS</strong> (Space Environment Information System). Note le condizioni di missione e il periodo, permette una valutazione preliminare della radiazione potenzialmente accumulata in termini di dose ionizzante totale (TID) e, più in generale, dei flussi di particelle (ioni, particelle pesanti e leggere) che potranno interagire con i sistemi o con gli astronauti.</p>
+<p>I dati derivano da:</p>
+<ul>
+<li>simulazioni e modelli;</li>
+<li>studi e misurazioni in ambiente spaziale;</li>
+<li>conoscenze astrofisiche, ad esempio legate all'attività solare.</li>
+</ul>
+<p>Il processo di valutazione dell'impatto segue due strade:</p>
+<ol>
+<li>valutazione della tipologia di missione;</li>
+<li>valutazione dei soggetti, animati o inanimati, che potranno interagire con la radiazione.</li>
+</ol>
+<blockquote>
+<p>**Nota di lavoro.** La sezione "La Missione" era vuota nella bozza. Ho inserito qui i contenuti già presenti sparsi nel testo. Da completare con un esempio numerico (ad esempio la TID accumulata in LEO a una quota e inclinazione date, in krad(Si) o Gy). <code>\[DA ESPANDERE]</code></p>
+</blockquote>
+<p>---</p>
+<h2 id="6-materia-inorganica-effetti-sullelettronica">6. Materia inorganica: effetti sull'elettronica</h2>
+<p><em>(slide 21-28)</em></p>
+<p>In prima analisi l'attenzione è sulla componentistica elettronica. DPU, RADAR e sensori sono tra gli strumenti più sensibili e i principali soggetti di analisi.</p>
+<h3 id="61-componenti-rad-hard-e-cots">6.1 Componenti rad-hard e COTS</h3>
+<p><code>\[DA ESPANDERE: esiste una repository, una sorta di biblioteca, con i dati raccolti su test effettuati su vari dispositivi. Indicare quale (ad esempio i database pubblici di NASA/ESA sui risultati dei test)]</code></p>
+<p>Nel settore aerospaziale si riconoscono due grandi famiglie di componenti elettronici.</p>
+<p><strong>Rad-hard.</strong> Componenti ingegnerizzati per lo spazio e testati per resistere agli effetti radiativi. Sono lo standard di riferimento, in particolare per missioni critiche, per applicazioni specifiche o quando la necessità di maggiore sicurezza prevale sul contenimento dei costi di sviluppo.</p>
+<p><strong>COTS (Commercial Off The Shelf).</strong> L'apertura del settore spaziale all'economia, con la cosiddetta <em>Space Economy</em>, ha portato le aziende a valutare in certi casi componenti non realizzati per lo spazio ma capaci di garantire un certo livello di affidabilità e robustezza. Il prezzo è la necessità di qualificarli con test dedicati.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Rad-hard</th>
+<th>COTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Costo</td>
+<td>Alto</td>
+<td>Basso</td>
+</tr>
+<tr>
+<td>Prestazioni</td>
+<td>Spesso indietro di una generazione</td>
+<td>Stato dell'arte</td>
+</tr>
+<tr>
+<td>Qualifica radiativa</td>
+<td>Già disponibile</td>
+<td>A carico dell'utilizzatore</td>
+</tr>
+<tr>
+<td>Uso tipico</td>
+<td>Missioni critiche</td>
+<td>Missioni a costo contenuto, LEO, breve durata</td>
+</tr>
+</tbody>
+</table>
+<p><code>\[VERIFICARE: la tabella è una sintesi generale, da rifinire con esempi]</code></p>
+<h3 id="62-i-tre-meccanismi-di-danno">6.2 I tre meccanismi di danno</h3>
+<table>
+<thead>
+<tr>
+<th>Meccanismo</th>
+<th>Origine</th>
+<th>Effetto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TID</strong> (Total Ionizing Dose)</td>
+<td>Fotoni e particelle cariche</td>
+<td>Carica intrappolata negli ossidi (Gate/SiO₂); degrado graduale nel tempo</td>
+</tr>
+<tr>
+<td><strong>DD</strong> (Displacement Damage)</td>
+<td>Protoni, neutroni, ioni pesanti</td>
+<td>Spostamento di atomi di silicio, centri di ricombinazione nel bulk</td>
+</tr>
+<tr>
+<td><strong>SEE</strong> (Single Event Effects)</td>
+<td>Singolo ione ad alto LET</td>
+<td>Errore logico, latch-up o guasto istantaneo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-tecnologia-cmos-n-mos-e-p-mos">6.3 Tecnologia CMOS: n-MOS e p-MOS</h3>
+<p>Sotto radiazione, in un dispositivo CMOS si generano coppie elettrone-lacuna. Molte si ricombinano, ma alcune sfuggono alla ricombinazione e migrano. L'accumulo di lacune all'interfaccia Gate/SiO₂ o Si/SiO₂ altera la risposta del transistor. La ricombinazione (e il fenomeno di <em>annealing</em> durante i test) permette al materiale di riorganizzarsi parzialmente.</p>
+<p>La riduzione dello spessore degli ossidi ha spostato il problema: la carica intrappolata è oggi rilevante non solo nell'ossido di gate ma anche negli ossidi di campo, negli ossidi sepolti (BOX) dei dispositivi SOI e nei dielettrici alternativi.</p>
+<p><code>\[FIGURA: due rappresentazioni di tecnologia SOI-CMOS]</code>
+<code>\[FIGURA: Schwank et al., "Radiation Effects in MOS Oxides", 2008, ricombinazione ostacolata sotto irraggiamento]</code></p>
+<p><strong>n-MOS.</strong> Un gate a tensione nulla o negativa lo mantiene spento; una tensione positiva lo accende, formando il canale tra Source e Drain. Sotto radiazione le lacune intrappolate nell'ossido, o le cariche negative attratte all'interfaccia, alterano il campo elettrico: il canale può diventare permanentemente attivo (leakage radio-indotto, <em>hard error</em>).</p>
+<ul>
+<li>Worst case: <strong>bias di gate positivo (V_GS &gt; 0)</strong>, che spinge le lacune verso l'interfaccia Si/SiO₂.</li>
+<li>Rischi: calo iniziale della tensione di soglia e aumento delle correnti di leakage.</li>
+<li>Più critico durante l'<strong>operatività attiva</strong>.</li>
+</ul>
+<p><strong>p-MOS.</strong> Speculare all'n-MOS: si accende con tensione di gate negativa rispetto al source. Le cariche intrappolate sono prevalentemente positive, quindi spingono il transistor verso lo stato OFF.</p>
+<ul>
+<li>Rischio primario: <strong>aumento della tensione di soglia V_th</strong>, con degrado dei tempi di commutazione o, nei casi estremi, impossibilità di accensione.</li>
+<li>Worst case: bias di gate nullo o negativo.</li>
+<li>Più critico in <strong>condizioni di non operatività</strong>.</li>
+<li>In generale più robusto dell'n-MOS rispetto agli shift di soglia da carica nell'ossido.</li>
+</ul>
+<h3 id="64-condizioni-di-test-worst-case-bias-statico-e-dinamico">6.4 Condizioni di test: worst case, bias statico e dinamico</h3>
+<ul>
+<li><strong>Worst-case scenario.</strong> Si applica il bias che causa il massimo degrado. Per gli n-MOS è un gate positivo fisso: le trappole indotte sono le più persistenti e causa principale di problemi di timing e consumo.</li>
+<li><strong>Bias statico.</strong> Il chip è mantenuto in una configurazione operativa fissa (ad esempio tutti i canali in ricezione). È utile per valutare il rischio di guasto per assorbimento eccessivo di corrente.</li>
+<li><strong>Bias dinamico.</strong> I transistor commutano durante l'irraggiamento. Spesso è meno severo del bias statico positivo, perché il campo alternato favorisce una parziale ricombinazione delle cariche intrappolate.</li>
+</ul>
+<p>Indicazioni operative per i test su CMOS:</p>
+<ol>
+<li>identificare lo stato operativo in cui il sistema resta più a lungo (ad esempio <em>standby</em> o <em>transmission</em>);</li>
+<li>applicare i livelli di polarizzazione corrispondenti;</li>
+<li>in via precauzionale, applicare un bias positivo fisso ai gate degli n-MOS.</li>
+</ol>
+<h3 id="65-tecnologia-bipolare-bjt-e-sige-hbt">6.5 Tecnologia bipolare: BJT e SiGe HBT</h3>
+<p>Il danno nei bipolari differisce da quello nei MOS: non dipende dall'effetto di campo nell'ossido, ma da <strong>ricombinazione superficie-volume</strong> e <strong>displacement damage</strong>.</p>
+<ul>
+<li><strong>ELDRS (Enhanced Low Dose Rate Sensitivity).</strong> I bipolari mostrano spesso degrado maggiore a basso rateo di dose (coerente con l'ambiente spaziale reale) rispetto ai test accelerati ad alto rateo. Di conseguenza i test di laboratorio potrebbero non essere conservativi.</li>
+<li><strong>Parametro chiave.</strong> Guadagno di corrente β (h_FE): la ricombinazione all'interfaccia aumenta la corrente di base I_B e il guadagno collassa.</li>
+<li><strong>Diagnostica.</strong> Gummel plot (I_C e I_B in funzione di V_BE: sotto radiazione la curva di I_B "sale" a basse tensioni, segno di trappole che aumentano la ricombinazione) e DLTS (Deep Level Transient Spectroscopy) per identificare i tipi di trappole atomiche.</li>
+<li><strong>Displacement damage.</strong> Protoni e neutroni spostano atomi di silicio, creando centri di ricombinazione nel bulk.</li>
+<li><strong>Robustezza.</strong> I SiGe HBT sono molto robusti al TID (regioni attive piccole, drogaggi elevati), ma restano sensibili ai SEE per la velocità di commutazione.</li>
+</ul>
+<p>Riferimenti in letteratura: J. D. Cressler (radiation effects nei SiGe HBT), D. M. Fleetwood e R. D. Schrimpf (modellazione del danno nei BJT), S. L. Kosier (degrado del guadagno indotto da radiazione).</p>
+<h3 id="66-case-study-1-adar1000">6.6 Case study 1: ADAR1000</h3>
+<p>L'ADAR1000 (Analog Devices), un componente SiGe BiCMOS, è considerato critico per l'unità RADAR in banda X. Contiene tre tecnologie con vulnerabilità diverse: n-MOS, p-MOS e bipolare. Sulla base delle informazioni pubbliche è realizzato in tecnologia SOI-CMOS.</p>
+<p>Il dispositivo si testa in condizioni polarizzate e non polarizzate, con sensibilità diverse: non esiste un metodo di indagine semplice. In un chip mixed-signal come questo non esiste un bias universalmente più critico.</p>
+<table>
+<thead>
+<tr>
+<th>Sezione</th>
+<th>Criticità</th>
+<th>Quando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>n-MOS</strong></td>
+<td>Shift di soglia e leakage</td>
+<td>Operatività attiva (gate positivo)</td>
+</tr>
+<tr>
+<td><strong>p-MOS</strong></td>
+<td>Degrado graduale delle caratteristiche di commutazione</td>
+<td>Condizioni di non operatività</td>
+</tr>
+<tr>
+<td><strong>Bipolare</strong></td>
+<td>Robusto a TID, sensibile a SEE; ELDRS</td>
+<td>Alta velocità; basso rateo di dose</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Raccomandazioni per il piano di test</strong></p>
+<ol>
+<li><strong>Bias statico</strong> per valutare gli n-MOS (considerati più critici).</li>
+<li><strong>Gestione dell'annealing.</strong> Può influenzare la risposta complessiva, in particolare del bipolare, che si presume gestisca la sezione RF. Discutere con il laboratorio come compensare l'eventuale recupero legato al tempo di annealing.</li>
+<li><strong>Caratterizzazione RF pre/post irraggiamento.</strong> Non ci sono evidenze specifiche sulla risposta del front-end RF dell'ADAR1000, e il comportamento della catena completa non è deducibile dai dati su SiGe HBT discreti. Le condizioni di bias della sezione RF (LNA attivo, bias variabile dello sfasatore) possono massimizzare l'intrappolamento di carica alle interfacce, con degrado misurabile anche a TID bassa (&lt; 50 krad). Parametri da verificare: <strong>Noise Figure, Phase Shift, Gain</strong>.</li>
+<li><strong>Test senza bias (opzionale)</strong>, in una fase successiva, dopo i primi risultati con bias.</li>
+</ol>
+<h3 id="67-case-study-2-schermatura-con-bn-bnnt">6.7 Case study 2: schermatura con BN (BNNT)</h3>
+<p>Kurs Orbital sta progettando una soluzione RADAR per applicazioni spaziali. Poiché i componenti elettronici sono molto sensibili alla radiazione, il team ha valutato una schermatura basata su <strong>nitruro di boro (BN)</strong>, scelta per l'elevata sezione d'urto di assorbimento degli isotopi del boro.</p>
+<p>Analisi iniziale con <strong>Geant4 v11.4</strong> (Monte Carlo), con fluenze protoniche derivate da <strong>SPENVIS</strong> per orbita <strong>LEO</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Configurazione</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 - Baseline</strong></td>
+<td>Equivalente Cu 0,5 mm davanti al volume sensibile SiGe (multistrato del front-end ridotto a un monolayer equivalente di rame)</td>
+</tr>
+<tr>
+<td><strong>2 - Layer BN</strong></td>
+<td>BN 0,4 mm in matrice di resina fenolica con 10 wt% di strutture BN; isotopi del boro: 19% ¹⁰B, 81% ¹¹B</td>
+</tr>
+<tr>
+<td><strong>3 - BN + antenna</strong></td>
+<td>Il layer BN è posto davanti all'antenna RADAR, seguito da un volume d'aria prima del front-end</td>
+</tr>
+</tbody>
+</table>
+<p>Simulate 1000 particelle (protoni); la grandezza stimata è la dose (krad) accumulata a livello del chip SiGe.</p>
+<p><code>\[FIGURA: schema delle tre configurazioni]</code>
+<code>\[FIGURA: krad al livello del chip SiGe, risultati Geant4 v11.4]</code></p>
+<p><strong>Risultato.</strong> La mitigazione più efficace si ottiene posizionando il layer direttamente davanti all'antenna RADAR (configurazione 3).</p>
+<p><strong>Prossimi passi, da verificare con il fornitore</strong></p>
+<ol>
+<li><strong>Fattibilità di produzione</strong>: layer BN continuo e stabile da 0,4 mm.</li>
+<li><strong>Composizione</strong>: rapporto isotopico ¹⁰B/¹¹B ottimale e carico BN (wt%) nella resina fenolica.</li>
+<li><strong>Proprietà EM</strong>: trasparenza elettromagnetica e proprietà dielettriche alle frequenze operative del RADAR.</li>
+</ol>
+<p>Uno spessore maggiore resta possibile per esigenze strutturali o meccaniche. Segue una campagna sperimentale per validare i dati di simulazione prima della realizzazione del primo schermo fisico.</p>
+<blockquote>
+<p>**Punto da chiarire nel documento sorgente.** Il report attribuisce l'interesse per il BN all'assorbimento di "particelle massive, come protoni e neutroni". L'elevata sezione d'urto del ¹⁰B è nota soprattutto per la **cattura neutronica**; per i protoni l'attenuazione dipende soprattutto dalla densità elettronica e dallo spessore del materiale. Vale la pena che l'autore espliciti nel testo quale meccanismo domina nella simulazione, altrimenti un lettore attento potrebbe obiettare. Inoltre il deck parla di "BNNT" (nanotubi) mentre il report parla di "strutture BN": uniformare la terminologia.</p>
+</blockquote>
+<p>---</p>
+<h2 id="7-i-test-in-laboratorio">7. I test in laboratorio</h2>
+<p><code>\[DA ESPANDERE: questa sezione era vuota nella bozza. Proposta di struttura]</code></p>
+<p>I test di laboratorio servono a qualificare un componente (rad-hard o COTS) rispetto agli effetti descritti nella sezione 6. Ogni meccanismo di danno richiede una sorgente e un protocollo diversi.</p>
+<table>
+<thead>
+<tr>
+<th>Effetto</th>
+<th>Sorgente tipica</th>
+<th>Cosa si misura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TID</strong></td>
+<td>Sorgenti gamma (ad esempio Co-60) o raggi X</td>
+<td>Deriva dei parametri elettrici in funzione della dose; recupero con annealing</td>
+</tr>
+<tr>
+<td><strong>DD</strong></td>
+<td>Fasci di protoni o neutroni</td>
+<td>Degrado di guadagno e correnti di buio</td>
+</tr>
+<tr>
+<td><strong>SEE</strong></td>
+<td>Fasci di ioni pesanti (LET variabile) e protoni</td>
+<td>Sezione d'urto in funzione del LET; SEU, SEL, SET</td>
+</tr>
+</tbody>
+</table>
+<p>Punti chiave da trattare:</p>
+<ul>
+<li><strong>Bias durante il test</strong> (statico o dinamico, vedi 6.4) e scelta del worst case.</li>
+<li><strong>Rateo di dose</strong> e ELDRS: un test ad alto rateo può non essere conservativo per i bipolari.</li>
+<li><strong>Annealing</strong>: gestione dei tempi tra irraggiamento e misura.</li>
+<li><strong>Caratterizzazione funzionale pre/post</strong> (nel caso ADAR1000: Noise Figure, Phase Shift, Gain).</li>
+<li><strong>Margini di progetto</strong> (RDM, radiation design margin) secondo ECSS-E-ST-10-12C.</li>
+<li>Riferimenti normativi per i metodi di test. <code>\[VERIFICARE: citare i metodi standard usati, ad esempio ESCC 22900 per TID e ESCC 25100 per SEE, oltre ai MIL-STD-883 TM1019]</code></li>
+<li>Strutture di irraggiamento europee e disponibilità di fasci. <code>\[DA ESPANDERE]</code></li>
+</ul>
+<p>---</p>
+<h2 id="8-materia-organica-effetti-biologici">8. Materia organica: effetti biologici</h2>
+<p><em>(slide 29-33)</em></p>
+<h3 id="81-danno-diretto-e-indiretto-al-dna">8.1 Danno diretto e indiretto al DNA</h3>
+<p><strong>Danno diretto.</strong> La particella ionizzante colpisce direttamente la molecola di DNA e può causare rotture del singolo o del doppio filamento. La rottura a doppio filamento è la lesione più grave, più difficile da riparare correttamente. È più probabile con particelle ad alto LET (alfa, ioni pesanti).</p>
+<p><strong>Danno indiretto.</strong> La radiazione ionizza le molecole d'acqua circostanti (radiolisi), producendo radicali liberi altamente reattivi (ad esempio il radicale idrossile OH•) che diffondono e danneggiano chimicamente il DNA. È il meccanismo dominante per radiazione a basso LET (raggi X, gamma, beta).</p>
+<h3 id="82-let-ed-efficacia-biologica">8.2 LET ed efficacia biologica</h3>
+<p>Il danno biologico non dipende solo dalla dose assorbita, ma fortemente dal LET.</p>
+<table>
+<thead>
+<tr>
+<th>Radiazione</th>
+<th>LET</th>
+<th>Pattern del danno</th>
+<th>Efficacia biologica relativa (RBE)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X / gamma / beta</td>
+<td>Basso</td>
+<td>Sparso, soprattutto indiretto</td>
+<td>Riferimento (≈ 1)</td>
+</tr>
+<tr>
+<td>Protoni</td>
+<td>Medio</td>
+<td>Misto diretto/indiretto</td>
+<td>Moderatamente superiore</td>
+</tr>
+<tr>
+<td>Alfa / ioni pesanti</td>
+<td>Molto alto</td>
+<td>Diretto, denso, concentrato sulla traccia</td>
+<td>Significativamente superiore a parità di dose</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Concetto chiave:</strong> a parità di dose assorbita, l'alto LET produce danno più grave e più difficile da riparare.</p>
+<h3 id="83-effetti-acuti-e-cronici">8.3 Effetti acuti e cronici</h3>
+<ul>
+<li><strong>Acuti</strong> (dosi elevate, esposizione breve): sindrome acuta da radiazione, rara alle dosi tipiche di missione ma possibile in caso di grandi eventi SPE non schermati. Nausea, affaticamento, danno midollare a dosi molto alte.</li>
+<li><strong>Cronici</strong> (esposizione cumulata): aumento del rischio oncologico, effetti sul sistema nervoso centrale, cataratta, effetti cardiovascolari.</li>
+<li><strong>Variabilità individuale</strong>: la risposta varia da persona a persona, per questo i limiti di dose professionale sono definiti con margini conservativi.</li>
+</ul>
+<h3 id="84-protezione-e-monitoraggio">8.4 Protezione e monitoraggio</h3>
+<ol>
+<li><strong>Limiti di dose in carriera</strong> definiti da enti come NASA ed ESA, differenziati per età e sesso in base al rischio oncologico stimato. <code>\[VERIFICARE: valori attuali dei limiti]</code></li>
+<li><strong>Dosimetria personale</strong>, con dosimetri attivi e passivi.</li>
+<li><strong>Pianificazione delle attività</strong>: le EVA e le finestre di missione tengono conto delle previsioni di attività solare.</li>
+</ol>
+<p>---</p>
+<h2 id="9-sintesi-e-confronto">9. Sintesi e confronto</h2>
+<p><em>(slide 34-37)</em></p>
+<h3 id="91-materia-inorganica-e-organica-a-confronto">9.1 Materia inorganica e organica a confronto</h3>
+<table>
+<thead>
+<tr>
+<th>Aspetto</th>
+<th>Inorganica (elettronica)</th>
+<th>Organica (biologia)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meccanismo di danno</td>
+<td>TID, DD, SEE</td>
+<td>Danno diretto e indiretto al DNA</td>
+</tr>
+<tr>
+<td>Parametro critico</td>
+<td>Dose totale (TID); LET per i SEE</td>
+<td>Dose assorbita e LET (RBE)</td>
+</tr>
+<tr>
+<td>Radiazione più critica</td>
+<td>Ioni pesanti (SEE); dose cumulata (TID)</td>
+<td>Alto LET (alfa, ioni pesanti)</td>
+</tr>
+<tr>
+<td>Reversibilità</td>
+<td>Parziale, via annealing in alcuni casi</td>
+<td>Riparazione cellulare, spesso incompleta ad alto LET</td>
+</tr>
+<tr>
+<td>Mitigazione principale</td>
+<td>Schermatura, ridondanza, qualifica dei componenti</td>
+<td>Schermatura, monitoraggio dosimetrico, pianificazione</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-strategie-di-mitigazione-trasversali">9.2 Strategie di mitigazione trasversali</h3>
+<p><strong>Schermatura dei materiali</strong></p>
+<ul>
+<li>Scelta del materiale in base al tipo di radiazione dominante.</li>
+<li>Compromesso tra massa, spessore e trasparenza EM/ottica.</li>
+<li>Posizionamento strategico rispetto ai componenti critici (come mostra il case study BNNT).</li>
+</ul>
+<p><strong>Progettazione e processi</strong></p>
+<ul>
+<li>Elettronica: ridondanza, qualifica radiativa, tecnologie robuste (ad esempio SiGe HBT).</li>
+<li>Biologia: monitoraggio dosimetrico continuo, pianificazione delle missioni.</li>
+<li>Per entrambe: test rappresentativi delle condizioni reali (bias, rateo di dose).</li>
+</ul>
+<p>---</p>
+<h2 id="appendice-elenco-delle-modifiche-rispetto-alla-bozza-originale">Appendice: elenco delle modifiche rispetto alla bozza originale</h2>
+<ol>
+<li>Corretti i refusi: "entra" → "entro", "Bleu Origin" → "Blue Origin", "pontenzialmente" → "potenzialmente", "generi sensori" → "sensori generici".</li>
+<li>Sostituita la frase interrotta "Lo spazio è un ambiente ostile. la tecnologia" con la sezione 1 "Un ambiente ostile, due bersagli".</li>
+<li>Ricollocato ECSS-Q-ST-70-06C come standard sui materiali.</li>
+<li>Corretta l'attribuzione delle particelle pesanti (GCR) e dei protoni (Sole).</li>
+<li>Data di dismissione ISS riformulata e segnalata da verificare.</li>
+<li>Aggiunte le sezioni mancanti (origine, classificazione, meccanismi di danno, case study, biologia, sintesi) allineandole al deck e ai due documenti tecnici.</li>
+<li>Sezione "La Missione" e "I test in laboratorio" impostate con una struttura da completare.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
