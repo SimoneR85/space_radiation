@@ -936,29 +936,67 @@ In figure 1 a general scheme about how CMOS technology works, puttin in evidence
 <h2 id="_1"></h2>
 <hr />
 <h3 id="interactive-radiation-effects-simulation">Interactive Radiation Effects Simulation</h3>
-<div style="background: var(--md-background-cli-bg, #12161D); border-radius: 12px; padding: 16px; margin-top: 20px;">
-  <div id="sp-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px"></div>
-  <canvas id="cv" style="width:100%;height:auto;display:block;border-radius:12px"></canvas>
+<div style="background: #12161D; border-radius: 12px; padding: 18px; margin-top: 20px; font-family: system-ui, -apple-system, sans-serif;">
 
-  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:12px 0; color: #fff;">
-    <label class="ctl">Al shield
-      <input type="range" id="th" min="0" max="10" step="1" value="4" style="width:130px"><b id="th-o">4 mm</b></label>
-    <label class="ctl">Flux
-      <input type="range" id="fx" min="1" max="10" step="1" value="5" style="width:110px"><b id="fx-o">5</b></label>
-    <button id="pp">Pause</button>
-    <button id="rs">Reset</button>
-    <button id="pc">Power cycle</button>
+  <!-- Selettore Particelle -->
+  <div id="sp-row" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;"></div>
+
+  <!-- Canvas Animazione -->
+  <canvas id="cv" style="width:100%; height:auto; display:block; border-radius:8px; background:#12161D;"></canvas>
+
+  <!-- Barra dei Controlli (Shield, Flux, Pulsanti) -->
+  <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin:14px 0; padding:10px 14px; background:#1c1b19; border-radius:8px; border:1px solid #333;">
+
+    <div style="display:flex; align-items:center; gap:15px; flex-wrap:wrap;">
+      <label style="color:#ccc; font-size:13px; display:flex; align-items:center; gap:8px;">
+        Al shield:
+        <input type="range" id="th" min="0" max="10" step="1" value="4" style="width:110px;">
+        <b id="th-o" style="color:#fff; min-width:40px;">4 mm</b>
+      </label>
+
+      <label style="color:#ccc; font-size:13px; display:flex; align-items:center; gap:8px;">
+        Flux:
+        <input type="range" id="fx" min="1" max="10" step="1" value="5" style="width:90px;">
+        <b id="fx-o" style="color:#fff; min-width:20px;">5</b>
+      </label>
+    </div>
+
+    <!-- Pulsanti Visibili -->
+    <div style="display:flex; gap:8px;">
+      <button id="pp" style="background:#2a2927; color:#fff; border:1px solid #666; border-radius:6px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:500;">Pause</button>
+      <button id="rs" style="background:#2a2927; color:#fff; border:1px solid #666; border-radius:6px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:500;">Reset</button>
+      <button id="pc" style="background:#2a2927; color:#fff; border:1px solid #666; border-radius:6px; padding:6px 14px; font-size:13px; cursor:pointer; font-weight:500;">Power cycle</button>
+    </div>
   </div>
 
-  <div id="info" style="background:var(--surface-2, #23221f);border:0.5px solid var(--border, #444);border-radius:12px;padding:12px 16px;margin:0 0 12px; color: #ece9e0;"></div>
+  <!-- Box Informazioni -->
+  <div id="info" style="background:#23221f; border:1px solid #3d3b37; border-radius:8px; padding:12px 16px; margin-bottom:12px; color:#ece9e0; font-size:13px;"></div>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 10px">
-    <div class="mc" style="background:#2a2927;padding:10px;border-radius:8px;"><div class="l" style="font-size:12px;color:#b4b2a9;">Total ionizing dose</div><div class="v" id="m-dose" style="font-size:20px;font-weight:500;color:#fff;">0.0 krad</div><div class="s" style="font-size:12px;color:#888780;">Holes trapped in the oxide</div></div>
-    <div class="mc" style="background:#2a2927;padding:10px;border-radius:8px;"><div class="l" style="font-size:12px;color:#b4b2a9;">Threshold shift</div><div class="v" id="m-vth" style="font-size:20px;font-weight:500;color:#fff;">0 mV</div><div class="s" style="font-size:12px;color:#888780;">NMOS Vth drifts negative</div></div>
-    <div class="mc" style="background:#2a2927;padding:10px;border-radius:8px;"><div class="l" style="font-size:12px;color:#b4b2a9;">Displacement damage</div><div class="v" id="m-dd" style="font-size:20px;font-weight:500;color:#fff;">0</div><div class="s" style="font-size:12px;color:#888780;">Vacancy–interstitial pairs</div></div>
-    <div class="mc" style="background:#2a2927;padding:10px;border-radius:8px;"><div class="l" style="font-size:12px;color:#b4b2a9;">Single events</div><div class="v" id="m-see" style="font-size:20px;font-weight:500;color:#fff;">0 SEU · 0 SEL</div><div class="s" style="font-size:12px;color:#888780;">Charge in a sensitive volume</div></div>
+  <!-- Contatori -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:10px; margin-bottom:10px;">
+    <div style="background:#2a2927; padding:10px 12px; border-radius:8px; border:1px solid #383734;">
+      <div style="font-size:11px; color:#b4b2a9;">Total ionizing dose</div>
+      <div id="m-dose" style="font-size:18px; font-weight:600; color:#fff; margin:2px 0;">0.0 krad</div>
+      <div style="font-size:11px; color:#888780;">Holes trapped in oxide</div>
+    </div>
+    <div style="background:#2a2927; padding:10px 12px; border-radius:8px; border:1px solid #383734;">
+      <div style="font-size:11px; color:#b4b2a9;">Threshold shift</div>
+      <div id="m-vth" style="font-size:18px; font-weight:600; color:#fff; margin:2px 0;">0 mV</div>
+      <div style="font-size:11px; color:#888780;">NMOS Vth drifts negative</div>
+    </div>
+    <div style="background:#2a2927; padding:10px 12px; border-radius:8px; border:1px solid #383734;">
+      <div style="font-size:11px; color:#b4b2a9;">Displacement damage</div>
+      <div id="m-dd" style="font-size:18px; font-weight:600; color:#fff; margin:2px 0;">0</div>
+      <div style="font-size:11px; color:#888780;">Vacancy–interstitial pairs</div>
+    </div>
+    <div style="background:#2a2927; padding:10px 12px; border-radius:8px; border:1px solid #383734;">
+      <div style="font-size:11px; color:#b4b2a9;">Single events</div>
+      <div id="m-see" style="font-size:18px; font-weight:600; color:#fff; margin:2px 0;">0 SEU · 0 SEL</div>
+      <div style="font-size:11px; color:#888780;">Charge in sensitive volume</div>
+    </div>
   </div>
-  <div id="st-line" style="font-size:13px;padding:8px 12px;border-radius:8px"></div>
+
+  <div id="st-line" style="font-size:13px; padding:8px 12px; border-radius:6px; font-weight:500;"></div>
 </div>
 
 <script>
@@ -966,7 +1004,7 @@ In figure 1 a general scheme about how CMOS technology works, puttin in evidence
 var cv=document.getElementById('cv'),ctx=cv.getContext('2d');
 var W=680,H=414,dpr=Math.min(window.devicePixelRatio||1,2);
 cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-var FF=getComputedStyle(document.body).fontFamily||'sans-serif';
+var FF='system-ui, -apple-system, sans-serif';
 
 var SH_BOT=150,CH_TOP=160,SI_BOT=350;
 var CX=[113,340,567];
@@ -1139,18 +1177,18 @@ function trail(tr,type,alpha){
 }
 
 function legend(){
- var items=[{c:'#5F5E5A',t:'Al shield'},{c:'#232B38',t:'Metal and dielectric'},{c:'#EF9F27',t:'Gate oxide (SiO₂)'},{c:'#0F5E4B',t:'n+ source and drain'},{c:'#1B3556',t:'p-type silicon'},{k:'sv',t:'Sensitive volume'},{k:'hole',t:'Trapped hole (dose)'},{k:'def',t:'Lattice defect (displacement)'},{k:'seu',t:'Charge burst (single event)'}];
- var x=14,y=376;ctx.font='11px '+FF;
+ var items=[{c:'#5F5E5A',t:'Al shield'},{c:'#232B38',t:'Metal/Dielectric'},{c:'#EF9F27',t:'SiO₂ Gate'},{c:'#0F5E4B',t:'n+ Source/Drain'},{c:'#1B3556',t:'p-Si'},{k:'sv',t:'Sensitive vol.'},{k:'hole',t:'Trapped hole'},{k:'def',t:'Lattice defect'},{k:'seu',t:'Single event'}];
+ var x=14,y=382;ctx.font='11px '+FF;
  items.forEach(function(it){
-  var w=ctx.measureText(it.t).width+20;
-  if(x+w>W-10){x=14;y+=17;}
-  if(it.c){ctx.fillStyle=it.c;ctx.fillRect(x,y-9,10,10);ctx.strokeStyle='#888780';ctx.lineWidth=.5;ctx.strokeRect(x,y-9,10,10);}
-  else if(it.k==='sv'){ctx.setLineDash([3,2]);ctx.strokeStyle='#5DCAA5';ctx.lineWidth=1;ctx.strokeRect(x+.5,y-8.5,9,9);ctx.setLineDash([]);}
-  else if(it.k==='hole'){ctx.fillStyle='#EF9F27';ctx.fillRect(x,y-9,10,10);tx('+',x+5,y,'#501313',11,'center',true);}
-  else if(it.k==='def'){ctx.setLineDash([2,2]);ctx.strokeStyle='#F0997B';ctx.lineWidth=1;ctx.beginPath();ctx.arc(x+4,y-4,3.5,0,6.28);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#F0997B';ctx.fillRect(x+8,y-9,3,3);}
-  else if(it.k==='seu'){ctx.strokeStyle='#F09595';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(x+5,y-4,4.5,0,6.28);ctx.stroke();}
-  tx(it.t,x+16,y,'#B4B2A9',11);
-  x+=w+14;
+  var w=ctx.measureText(it.t).width+16;
+  if(x+w>W-10){x=14;y+=16;}
+  if(it.c){ctx.fillStyle=it.c;ctx.fillRect(x,y-9,9,9);ctx.strokeStyle='#888780';ctx.lineWidth=.5;ctx.strokeRect(x,y-9,9,9);}
+  else if(it.k==='sv'){ctx.setLineDash([3,2]);ctx.strokeStyle='#5DCAA5';ctx.lineWidth=1;ctx.strokeRect(x+.5,y-8.5,8,8);ctx.setLineDash([]);}
+  else if(it.k==='hole'){ctx.fillStyle='#EF9F27';ctx.fillRect(x,y-9,9,9);tx('+',x+4.5,y,'#501313',10,'center',true);}
+  else if(it.k==='def'){ctx.setLineDash([2,2]);ctx.strokeStyle='#F0997B';ctx.lineWidth=1;ctx.beginPath();ctx.arc(x+4,y-4,3,0,6.28);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#F0997B';ctx.fillRect(x+7,y-8,2,2);}
+  else if(it.k==='seu'){ctx.strokeStyle='#F09595';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(x+4,y-4,4,0,6.28);ctx.stroke();}
+  tx(it.t,x+14,y,'#B4B2A9',10);
+  x+=w+10;
  });
 }
 
@@ -1167,140 +1205,7 @@ function draw(){
 
  ctx.fillStyle='#232B38';ctx.fillRect(0,CH_TOP,W,45);
  CX.forEach(function(c){
-  ctx.fillStyle='#6B7A90';ctx.fillRect(c-72,168,14,8);ctx.fillRect(c+58,168,14,8);ctx.fillRect(c-8,168,16,8);
-  ctx.fillStyle='#8D99AB';ctx.fillRect(c-66,176,3,43);ctx.fillRect(c+64,176,3,43);ctx.fillRect(c-1,176,3,29);
- });
- ctx.fillStyle='#BA7517';ctx.fillRect(0,219,W,10);
- CX.forEach(function(c){
-  ctx.fillStyle='#EF9F27';ctx.fillRect(c-45,219,90,10);
-  ctx.fillStyle='#7B8794';ctx.fillRect(c-45,205,90,14);
- });
- ctx.fillStyle='#1B3556';ctx.fillRect(0,229,W,121);
- CX.forEach(function(c){ctx.fillStyle='#0F5E4B';ctx.fillRect(c-85,229,40,30);ctx.fillRect(c+45,229,40,30);});
- for(var i=0;i<dots.length;i++){ctx.fillStyle=dots[i][2];ctx.globalAlpha=.55;ctx.fillRect(dots[i][0]-1,dots[i][1]-1,2,2);}
- ctx.globalAlpha=1;
- for(var k=0;k<2;k++){ctx.fillStyle='#5C3D12';ctx.fillRect(CX[k]+85,229,(CX[k+1]-85)-(CX[k]+85),30);}
- ctx.setLineDash([4,3]);ctx.strokeStyle='#5DCAA5';ctx.lineWidth=1;
- DR.forEach(function(d){ctx.strokeRect(d.x+.5,d.y+.5,d.w-1,d.h-1);});
- ctx.setLineDash([]);
-
- for(var b=0;b<3;b++){
-  var fl=S.bf[b]>0&&(S.t-S.bf[b])<1.6;
-  ctx.strokeStyle=fl?'#F09595':'#3E5C7E';ctx.lineWidth=1;ctx.strokeRect(CX[b]-42+.5,296.5,83,25);
-  tx(fl?'bit flipped: '+S.bits[b]:'stored bit: '+S.bits[b],CX[b],313,fl?'#F7C1C1':'#B5D4F4',12,'center');
- }
-
- var nh=Math.min(27,Math.floor(S.dose/3.7));
- ctx.font='500 11px '+FF;ctx.textAlign='center';ctx.fillStyle='#501313';
- for(var h=0;h<nh;h++){ctx.fillText('+',CX[h%3]-40+Math.floor(h/3)*10,227.5);}
-
- defects.forEach(function(d){
-  ctx.setLineDash([2,2]);ctx.strokeStyle='#F0997B';ctx.lineWidth=1;ctx.beginPath();ctx.arc(d.x,d.y,4,0,6.28);ctx.stroke();ctx.setLineDash([]);
-  ctx.fillStyle='#F0997B';ctx.fillRect(d.x+6,d.y-6,3,3);
- });
-
- fades.forEach(function(f){trail(f.tr,f.type,.8*(1-(S.t-f.t0)/1.1));});
-
- parts.forEach(function(p){
-  var c=SP[p.type].color,dx=Math.sin(p.a),dy=Math.cos(p.a);
-  if(p.type==='gamma'){
-   ctx.strokeStyle=c;ctx.lineWidth=1.5;ctx.lineCap='round';ctx.beginPath();
-   for(var t=0;t<=34;t+=2){
-    var w=Math.sin((p.age-t)*.55)*3.2,X=p.x-dx*t-dy*w,Y=p.y-dy*t+dx*w;
-    if(t)ctx.lineTo(X,Y);else ctx.moveTo(X,Y);
-   }
-   ctx.stroke();
-   ctx.fillStyle=c;ctx.beginPath();ctx.arc(p.x,p.y,2,0,6.28);ctx.fill();
-   return;
-  }
-  ctx.globalAlpha=.3;ctx.strokeStyle=c;ctx.lineWidth=1;ctx.setLineDash(p.type==='neutron'?[2,3]:[]);
-  ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x-dx*(p.type==='neutron'?24:16),p.y-dy*(p.type==='neutron'?24:16));ctx.stroke();
-  ctx.setLineDash([]);ctx.globalAlpha=1;
-  if(p.type==='neutron'){
-   ctx.strokeStyle=c;ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(p.x,p.y,3.5,0,6.28);ctx.stroke();
-  }else{
-   trail(p.tr,p.type,1);
-   var r=p.type==='ion'?4.5:p.type==='proton'?3.2:2.2;
-   ctx.fillStyle=c;ctx.beginPath();ctx.arc(p.x,p.y,r,0,6.28);ctx.fill();
-   if(p.type==='ion'){ctx.strokeStyle='#EEEDFE';ctx.lineWidth=1;ctx.stroke();}
-  }
- });
-
- flashes.forEach(function(f){
-  var a=S.t-f.t0;
-  if(f.k==='seu'){
-   var life=f.big?.9:.8,al=Math.max(0,1-a/life),r=6+a*(f.big?60:42);
-   ctx.globalAlpha=al;ctx.strokeStyle='#F09595';ctx.lineWidth=2;ctx.beginPath();ctx.arc(f.x,f.y,r,0,6.28);ctx.stroke();
-   ctx.fillStyle='#F7C1C1';ctx.beginPath();ctx.arc(f.x,f.y,5*al,0,6.28);ctx.fill();ctx.globalAlpha=1;
-  }else if(f.k==='spark'){
-   var al2=Math.max(0,1-a/.35);ctx.globalAlpha=al2;ctx.strokeStyle=f.c;ctx.lineWidth=1.5;
-   ctx.beginPath();ctx.arc(f.x,f.y,3+a*18,0,6.28);ctx.stroke();ctx.globalAlpha=1;
-  }else if(f.k==='cascade'){
-   var al3=Math.max(0,1-a/.6),L=6+a*26;ctx.globalAlpha=al3;ctx.strokeStyle='#D3D1C7';ctx.lineWidth=1.5;
-   f.rays.forEach(function(g){ctx.beginPath();ctx.moveTo(f.x,f.y);ctx.lineTo(f.x+Math.cos(g)*L,f.y+Math.sin(g)*L);ctx.stroke();});
-   ctx.globalAlpha=1;
-  }
- });
-
- if(S.latch){
-  ctx.globalAlpha=.14+.1*Math.sin(S.t*8);ctx.fillStyle='#E24B4A';ctx.fillRect(0,CH_TOP,W,SI_BOT-CH_TOP);ctx.globalAlpha=1;
-  tx('Latch-up: supply current spike',W-14,20,'#F7C1C1',12,'right',true);
- }
- legend();
-}
-
-var cache={};
-function setT(id,s){if(cache[id]!==s){cache[id]=s;document.getElementById(id).textContent=s;}}
-function uiUpdate(){
- var vth=400*(1-Math.exp(-S.dose/120));
- setT('m-dose',S.dose.toFixed(1)+' krad');
- setT('m-vth','−'+Math.round(vth)+' mV');
- setT('m-dd',String(S.dd));
- setT('m-see',S.seu+' SEU · '+S.sel_+' SEL');
- var el=document.getElementById('st-line'),msg,bg,col;
- if(S.latch){msg='Latch-up: supply current 380 mA instead of 12 mA. Only a power cycle clears it.';bg='var(--bg-danger, #791f1f)';col='var(--text-danger, #f7c1c1)';}
- else if(S.dose>=100){msg='Dose beyond tolerance: leakage and threshold drift will break timing and logic levels.';bg='var(--bg-danger, #791f1f)';col='var(--text-danger, #f7c1c1)';}
- else if(S.dose>=50){msg='Degrading: the threshold voltage is drifting, margins are shrinking.';bg='var(--bg-warning, #633806)';col='var(--text-warning, #fac775)';}
- else if(S.dd>=30){msg='Displacement damage is building: gain and carrier lifetime fall in bipolar and optical parts.';bg='var(--bg-warning, #633806)';col='var(--text-warning, #fac775)';}
- else{msg='Nominal: supply current 12 mA. Dose limit for this device: 100 krad.';bg='var(--bg-success, #27500a)';col='var(--text-success, #c0dd97)';}
- if(cache.st!==msg){cache.st=msg;el.textContent=msg;el.style.background=bg;el.style.color=col;}
-}
-
-function renderInfo(){
- var d=INFO[S.sel],c=S.sel==='mixed'?'#888780':SP[S.sel].color;
- document.getElementById('info').innerHTML=
-  '<div style="display:flex;align-items:center;gap:8px;margin:0 0 8px"><span style="width:10px;height:10px;border-radius:50%;background:'+c+';display:inline-block"></span><span style="font-size:15px;font-weight:500">'+d.n+'</span></div>'+
-  '<div class="irow"><span>Charge · mass: </span><span>'+d.q+'</span><br><span>Where from: </span><span>'+d.s+'</span><br><span>How it interacts: </span><span>'+d.h+'</span><br><span>Main effects: </span><span>'+d.e+'</span><br><span>Shielding: </span><span>'+d.sh+'</span></div>';
-}
-function reset(){
- parts=[];fades=[];flashes=[];defects=[];
- S.dose=0;S.dd=0;S.seu=0;S.sel_=0;S.latch=false;S.bits=[1,0,1];S.bf=[0,0,0];S.acc=0;
-}
-var row=document.getElementById('sp-row');
-[['mixed','Mixed field','#888780'],['gamma','X / gamma',SP.gamma.color],['electron','Electrons',SP.electron.color],['proton','Protons',SP.proton.color],['neutron','Neutrons',SP.neutron.color],['ion','Heavy ions',SP.ion.color]].forEach(function(s){
- var b=document.createElement('button');b.className='sp'+(s[0]===S.sel?' on':'');b.dataset.k=s[0];
- b.style.cssText = "padding:6px 12px; border-radius:6px; border:1px solid #555; background:#2a2927; color:#fff; cursor:pointer;";
- b.innerHTML='<span class="dot" style="width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px;background:'+s[2]+'"></span>'+s[1];
- b.onclick=function(){S.sel=s[0];reset();renderInfo();};
- row.appendChild(b);
-});
-document.getElementById('th').oninput=function(e){S.th=+e.target.value;document.getElementById('th-o').textContent=S.th+' mm';};
-document.getElementById('fx').oninput=function(e){S.fx=+e.target.value;document.getElementById('fx-o').textContent=S.fx;};
-document.getElementById('pp').onclick=function(){S.paused=!S.paused;this.textContent=S.paused?'Resume':'Pause';};
-document.getElementById('rs').onclick=reset;
-document.getElementById('pc').onclick=function(){S.latch=false;S.bits=[1,0,1];S.bf=[0,0,0];};
-
-renderInfo();
-var last=performance.now();
-function frame(now){
- var dt=Math.min(.05,(now-last)/1000);last=now;
- if(!S.paused){S.t+=dt;update(dt);}
- draw();uiUpdate();
- requestAnimationFrame(frame);
-}
-requestAnimationFrame(frame);
-})();
-</script>
+  ctx.fillStyle='#6B7A90';ctx.fillRect(c-72,168,14,8);ctx.fillRect(c+58,168,14,8);ctx.fillRect(c-8,168,16,8
 
 
 
